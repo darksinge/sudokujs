@@ -1,6 +1,6 @@
 const assert = require('assert')
-const { Puzzle } = require('../lib/puzzle')
-const { loneSingle } = require('../lib/strategies')
+const { Puzzle } = require('../../lib/puzzle')
+const { loneSingle } = require('../../lib/strategies')
 
 describe('Long Single Strategy', () => {
   it('should be enough to solve a simple puzzle', () => {
