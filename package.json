@@ -1,15 +1,24 @@
 {
-  "name": "sudoku",
-  "version": "1.0.0",
+  "name": "@darksinge/sudokujs",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
     "test": "mocha 'test/**/*.test.js'",
     "lint": "npx stanard --verbose | npx snazzy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darksinge/sudokujs.git"
+  },
+  "homepage": "https://github.com/darksinge/sudokujs#readme",
+  "author": "Craig Blackburn",
+  "license": "MIT",
   "dependencies": {
     "esm": "^3.2.25",
     "lodash": "^4.17.21"
