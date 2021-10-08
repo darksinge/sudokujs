@@ -1,6 +1,6 @@
-import assert from 'assert'
-import { Cell, InvalidCoordinates, InvalidEntryError } from '../lib/cell.js'
-import { symbols } from '../lib/symbols.js'
+const assert = require('assert')
+const { Cell, InvalidCoordinates, InvalidEntryError } = require('../lib/cell')
+const { symbols } = require('../lib/symbols')
 
 describe('Cell', () => {
   describe('#constructor()', () => {

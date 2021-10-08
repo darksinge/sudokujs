@@ -1,5 +1,5 @@
-import assert from 'assert'
-import { Puzzle } from '../lib/puzzle.js'
+const assert = require('assert')
+const { Puzzle } = require('../lib/puzzle')
 
 describe('Puzzle', () => {
   describe('#fromSymbols()', () => {

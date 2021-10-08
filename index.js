@@ -1,3 +1,6 @@
-// eslint-disable-next-line
-require = require('esm')(module)
-module.exports = require('./main.js')
+
+module.exports = {
+  Puzzle: require('./lib/puzzle'),
+  Cell: require('./lib/cell'),
+  Symbol: require( './lib/symbols')
+}
