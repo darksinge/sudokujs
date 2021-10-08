@@ -1,6 +1,6 @@
 
 module.exports = {
-  Puzzle: require('./lib/puzzle'),
-  Cell: require('./lib/cell'),
-  Symbol: require( './lib/symbols')
+  ...require('./lib/puzzle'),
+  ...require('./lib/cell'),
+  ...require( './lib/symbols')
 }
