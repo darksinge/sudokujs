@@ -1,6 +1,6 @@
 const assert = require('assert')
 const { Cell, InvalidCoordinates, InvalidEntryError } = require('../lib/cell')
-const { symbols } = require('../lib/symbols')
+const { Symbols } = require('../lib/symbols')
 
 describe('Cell', () => {
   describe('#constructor()', () => {
@@ -11,7 +11,7 @@ describe('Cell', () => {
     })
 
     it('should be happy as a clam', () => {
-      for (const value of symbols) {
+      for (const value of Symbols.x49()) {
         assert.ok(new Cell({ value, row: 0, col: 0 }) instanceof Cell)
       }
     })
