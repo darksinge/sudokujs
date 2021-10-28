@@ -15,7 +15,9 @@ describe('Naked Pairs Strategy', () => {
     p.cells[0][1].candidates.set(['1', '2'])
 
     expect(p.applyStrategy(nakedPairs)).to.equal(true)
-    expect(p.cells[2][0].candidates.candidates).to.deep.equal(['3', '4'])
-    expect(p.cells[3][0].candidates.candidates).to.deep.equal(['3', '4'])
+    expect(p.cells[0][2].candidates.candidates).to.deep.equal(['3', '4'])
+    expect(p.cells[0][3].candidates.candidates).to.deep.equal(['3', '4'])
+    expect(p.cells[1][0].candidates.candidates).to.deep.equal(['1', '2', '3', '4'])
+    expect(p.cells[1][1].candidates.candidates).to.deep.equal(['1', '2', '3', '4'])
   })
 })
