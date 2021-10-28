@@ -22,6 +22,7 @@
     "@types/lodash": "^4.14.175",
     "chai": "^4.3.4",
     "chai-spies": "^1.0.0",
+    "husky": "^7.0.4",
     "mocha": "^9.1.2",
     "snazzy": "^9.0.0",
     "standard": "^16.0.4"
@@ -30,5 +31,10 @@
     "envs": [
       "mocha"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm test"
+    }
   }
 }
