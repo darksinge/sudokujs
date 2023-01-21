@@ -11,7 +11,7 @@ describe('Puzzle', () => {
           [1, 0, 0, 0],
           [0, 0, 0, 0],
           [0, 0, 0, 0],
-          [1, 0, 0, 0]
+          [1, 0, 0, 0],
         ])
       }, Error)
     })
@@ -22,7 +22,7 @@ describe('Puzzle', () => {
           [1, 0, 0, 1],
           [0, 0, 0, 0],
           [0, 0, 0, 0],
-          [0, 0, 0, 0]
+          [0, 0, 0, 0],
         ])
       }, Error)
     })
@@ -33,7 +33,7 @@ describe('Puzzle', () => {
           [1, 0, 0, 0],
           [0, 1, 0, 0],
           [0, 0, 0, 0],
-          [0, 0, 0, 0]
+          [0, 0, 0, 0],
         ])
       }, Error)
     })
@@ -43,7 +43,7 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
-        [0, 0, 0, 0]
+        [0, 0, 0, 0],
       ])
 
       assert.ok(p instanceof Puzzle)
@@ -56,7 +56,7 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
-        [0, 0, 0, 0]
+        [0, 0, 0, 0],
       ])
 
       assert.equal(p.isSolved(), false)
@@ -67,7 +67,7 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [3, 4, 2, 1],
         [2, 1, 4, 3],
-        [4, 3, 1, 2]
+        [4, 3, 1, 2],
       ])
 
       assert.equal(p.isSolved(), true)
@@ -80,13 +80,13 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [3, 4, 2, 1],
         [2, 1, 4, 3],
-        [4, 3, 1, 2]
+        [4, 3, 1, 2],
       ])
 
-      expect(p.rowAt(0).map(c => c.value)).to.deep.equal(['1', '2', '3', '4'])
-      expect(p.rowAt(1).map(c => c.value)).to.deep.equal(['3', '4', '2', '1'])
-      expect(p.rowAt(2).map(c => c.value)).to.deep.equal(['2', '1', '4', '3'])
-      expect(p.rowAt(3).map(c => c.value)).to.deep.equal(['4', '3', '1', '2'])
+      expect(p.rowAt(0).map((c) => c.value)).to.deep.equal(['1', '2', '3', '4'])
+      expect(p.rowAt(1).map((c) => c.value)).to.deep.equal(['3', '4', '2', '1'])
+      expect(p.rowAt(2).map((c) => c.value)).to.deep.equal(['2', '1', '4', '3'])
+      expect(p.rowAt(3).map((c) => c.value)).to.deep.equal(['4', '3', '1', '2'])
     })
 
     it('should return a reference to cells in the puzzle', () => {
@@ -94,7 +94,7 @@ describe('Puzzle', () => {
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
-        [0, 0, 0, 0]
+        [0, 0, 0, 0],
       ])
 
       expect(p.cells[0][0].value === null).to.be.true
@@ -111,13 +111,13 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [3, 4, 2, 1],
         [2, 1, 4, 3],
-        [4, 3, 1, 2]
+        [4, 3, 1, 2],
       ])
 
-      expect(p.colAt(0).map(c => c.value)).to.deep.equal(['1', '3', '2', '4'])
-      expect(p.colAt(1).map(c => c.value)).to.deep.equal(['2', '4', '1', '3'])
-      expect(p.colAt(2).map(c => c.value)).to.deep.equal(['3', '2', '4', '1'])
-      expect(p.colAt(3).map(c => c.value)).to.deep.equal(['4', '1', '3', '2'])
+      expect(p.colAt(0).map((c) => c.value)).to.deep.equal(['1', '3', '2', '4'])
+      expect(p.colAt(1).map((c) => c.value)).to.deep.equal(['2', '4', '1', '3'])
+      expect(p.colAt(2).map((c) => c.value)).to.deep.equal(['3', '2', '4', '1'])
+      expect(p.colAt(3).map((c) => c.value)).to.deep.equal(['4', '1', '3', '2'])
     })
 
     it('should return a reference to cells in the puzzle', () => {
@@ -125,7 +125,7 @@ describe('Puzzle', () => {
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
-        [0, 0, 0, 0]
+        [0, 0, 0, 0],
       ])
 
       expect(p.cells[0][0].value === null).to.be.true
@@ -142,7 +142,7 @@ describe('Puzzle', () => {
         [1, 2, 3, 4],
         [3, 4, 2, 1],
         [2, 1, 4, 3],
-        [4, 3, 1, 2]
+        [4, 3, 1, 2],
       ])
 
       // expect(p.boxAt({ x: 0, y: 0 }).map(c => c.value)).to.deep.equal(['1', '2', '3', '4'])
@@ -179,7 +179,7 @@ describe('Puzzle', () => {
         [0, 0, 0, 0],
         [0, 0, 0, 0],
         [0, 0, 0, 0],
-        [0, 0, 0, 0]
+        [0, 0, 0, 0],
       ])
 
       expect(p.cells[2][0].value === null).to.be.true

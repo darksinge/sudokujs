@@ -11,10 +11,12 @@ describe('utils.js', () => {
         new Cell({ row: 0, col: 0, candidates: ['1', '2', '3'] }),
         new Cell({ row: 0, col: 1, candidates: ['1', '2', '4'] }),
         new Cell({ row: 0, col: 2, candidates: ['5', '6'] }),
-        new Cell({ row: 0, col: 3, candidates: ['7', '8'] })
+        new Cell({ row: 0, col: 3, candidates: ['7', '8'] }),
       ]
 
-      const results = [...getSubsetCellsWith({ cells, sharedCandidates: 2, cellCount: 2 })]
+      const results = [
+        ...getSubsetCellsWith({ cells, sharedCandidates: 2, cellCount: 2 }),
+      ]
 
       expect(results.length).to.equal(1)
 
@@ -41,7 +43,7 @@ describe('utils.js', () => {
       expect(combos).to.deep.equal([
         ['a', 'b'],
         ['a', 'c'],
-        ['b', 'c']
+        ['b', 'c'],
       ])
     })
 
@@ -53,7 +55,7 @@ describe('utils.js', () => {
         ['a', 'b', 'c'],
         ['a', 'b', 'd'],
         ['a', 'c', 'd'],
-        ['b', 'c', 'd']
+        ['b', 'c', 'd'],
       ])
     })
   })

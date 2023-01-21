@@ -8,7 +8,7 @@ describe('Long Single Strategy', () => {
       [1, 0, 0, 0],
       [0, 2, 0, 0],
       [0, 3, 4, 0],
-      [0, 0, 0, 3]
+      [0, 0, 0, 3],
     ])
 
     assert.equal(p.isSolved(), false)

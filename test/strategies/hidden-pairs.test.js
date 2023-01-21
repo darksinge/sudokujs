@@ -8,7 +8,7 @@ describe('Naked Pairs Strategy', () => {
       [0, 0, 0, 0],
       [0, 0, 0, 0],
       [0, 0, 0, 0],
-      [0, 0, 0, 0]
+      [0, 0, 0, 0],
     ])
 
     p.cells[0][0].candidates.set(['1', '2', '3'])
